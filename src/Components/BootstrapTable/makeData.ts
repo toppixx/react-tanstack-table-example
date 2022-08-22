@@ -3,6 +3,12 @@ import {faker} from '@faker-js/faker'
 export type Person = {
   firstName: string
   lastName: string
+  pet: string
+  locationStreet: string
+  locationCity: string
+  locationCountry: string
+  music: string
+  faforiteSong: string
   age: number
   visits: number
   progress: number
@@ -22,6 +28,12 @@ const newPerson = (): Person => {
   return {
     firstName: faker.name.firstName(),
     lastName: faker.name.lastName(),
+    pet: faker.animal.snake.name,
+    locationStreet: faker.address.street.name,
+    locationCountry: faker.address.city.name,
+    locationCity: faker.address.country.name,
+    music: faker.music.genre.name,
+    faforiteSong: faker.music.songName.name,
     age: faker.datatype.number(40),
     visits: faker.datatype.number(1000),
     progress: faker.datatype.number(100),

@@ -35,4 +35,17 @@ html {
     max-width: 900px !important;
     overflow: auto;
   }
+
+  tbody {
+    border-bottom: 1px solid lightgray;
+  }
+  
+  tfoot {
+    color: gray;
+  }
+  
+  tfoot th {
+    font-weight: normal;
+  }
+  
   
